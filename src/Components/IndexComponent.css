@@ -1,0 +1,80 @@
+.index-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  color: #00ff99;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.flash-message p {
+  color: #00ff99;
+  font-size: 1.2rem;
+}
+
+.search-box {
+  margin: 20px 0;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #00ff99;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-btn:hover {
+  background-color: #00ff99;
+}
+
+/* User form styling */
+.user-box {
+  margin-top: 10px;
+}
+
+.user-input {
+  padding: 5px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.user-btn {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  background-color: #00ff99;
+  color: black;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.user-btn:hover {
+  background-color: #00ff99;
+}
+
+.tokens-box {
+  margin-top: 20px;
+  color: #999;
+}

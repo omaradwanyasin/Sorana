@@ -1,0 +1,556 @@
+/* General styling for dark mode and clean design */
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ff99;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Styling for the search container */
+.search-container {
+    text-align: center;
+}
+
+.search-form {
+    margin-bottom: 30px;
+}
+
+.search-input {
+    width: 60%;
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.search-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    background-color: #00ff99;
+    border: none;
+    border-radius: 5px;
+    color: #1e1e1e;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #00cc88;
+}
+
+.user-info {
+    margin-top: 20px;
+}
+
+.user-input {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.user-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    background-color: #00ff99;
+    border: none;
+    border-radius: 5px;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
+.token-info {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #c0c0c0;
+}
+
+.results-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.result-item {
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.result-content {
+    font-size: 1.2rem;
+}
+
+.result-link {
+    color: #00ff99;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.vote-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.vote-btn {
+    padding: 10px 20px;
+    background-color: #00ff99;
+    border: none;
+    border-radius: 5px;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
+.vote-btn:hover {
+    background-color: #00cc88;
+}
+
+.vote-count {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #c0c0c0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #c0c0c0;
+    font-size: 0.9rem;
+    border-top: 1px solid #333333;
+}
+
+/* Vote button hover and interaction */
+.vote-btn {
+    padding: 10px 20px;
+    background-color: #00ff99;
+    border: none;
+    border-radius: 5px;
+    color: #1e1e1e;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.vote-btn:hover {
+    background-color: #00cc88;
+    transform: translateY(-2px);
+}
+
+/* Results styling */
+.result-item {
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.result-link {
+    color: #00ff99;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.results-container {
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border-radius: 8px;
+}
+
+.image-result img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.results-list {
+    margin-top: 20px;
+}
+
+.result-item {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.result-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3bbf40;
+}
+
+.result-title a {
+    color: #3bbf40;
+    text-decoration: none;
+}
+
+.result-content {
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+.result-link {
+    display: block;
+    color: #2d91f0;
+    margin-top: 10px;
+}
+
+.vote-section {
+    margin-top: 10px;
+}
+
+.vote-btn {
+    background-color: #3bbf40;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vote-count {
+    margin-top: 5px;
+    color: #e0e0e0;
+}
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3bbf40;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Global: Apply lowercase to all text */
+* {
+    text-transform: lowercase;
+}
+
+/* Style for Summary Box */
+.summary-box {
+    background-color: #2c2c2c;
+    color: #00ff99;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+/* Style for Image Carousel */
+.carousel-inner img {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #00ff99;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+/* Style for Sort Options */
+.sort-options {
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #00ff99;
+}
+
+.sort-options select,
+.sort-options button {
+    background-color: #222;
+    color: #00ff99;
+    border: 1px solid #00ff99;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for Search Results */
+.results-list {
+    margin-top: 20px;
+}
+
+.result-item {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.result-title a {
+    color: #00ff99;
+    text-decoration: none;
+}
+
+.result-content {
+    color: #cfcfcf;
+}
+
+/* Style for Vote Section */
+.vote-section {
+    display: flex;
+    align-items: center;
+}
+
+.vote-btn {
+    background-color: #00ff99;
+    color: #222;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.vote-btn:hover {
+    background-color: #009966;
+}
+
+.vote-count {
+    color: #00ff99;
+}
+
+/* Spinner for Loading */
+.loading-spinner .spinner {
+    border: 4px solid rgba(0,0,0,0.1);
+    border-left-color: #00ff99;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Token Info */
+.token-info span {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+/* Make everything lowercase */
+body, h2, h3, p, a, label, button {
+    text-transform: lowercase;
+}
+
+/* Styling for the answer box */
+.answer-box {
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.answer-box h3 {
+    font-size: 1.5em;
+    color: #00ff00;
+}
+
+.answer-box p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* Carousel styling */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Sort dropdown */
+.sort-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sort-options label {
+    margin-right: 10px;
+    color: #ddd;
+}
+
+.sort-options select {
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+/* General styling for results */
+.result-item {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.result-title a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.result-content {
+    color: #ccc;
+    margin-top: 8px;
+}
+
+.vote-section {
+    margin-top: 10px;
+}
+
+.vote-btn {
+    background-color: #00ff00;
+    color: #000;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Make all green text consistent and #00ff99 */
+h2, .answer-box h3, .sorting-options label, .vote-btn, a.result-link {
+    color: #00ff99;
+}
+
+/* Style for the answer-box */
+.answer-box {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Bold styling for the summary */
+.answer-box p {
+    color: #ccc;
+}
+
+.answer-box p strong {
+    color: #00ff99;  /* Make bold text green */
+}
+
+/* Sorting options style */
+.sorting-options {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.sort-by {
+    background-color: #444;
+    color: #00ff99;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Result section styling */
+.result-item {
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.result-title a {
+    color: #00ff99;
+    font-size: 18px;
+}
+
+.result-content {
+    color: #ccc;
+}
+
+.vote-btn {
+    background-color: #00ff99;
+    color: #000;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.vote-count {
+    color: #00ff99;
+    font-size: 12px;
+    margin-top: 5px;
+}
